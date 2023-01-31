@@ -1,0 +1,12 @@
+<template>
+  <lightning-card title="Car Related List">
+    <template if:true={records}>
+      <div class="slds-var-m-around_medium">
+          <lightning-datatable data={records} columns={columns} key-field="Id"></lightning-datatable>
+      </div>
+  </template>
+  <template if:true={error}>
+    {error}
+  </template>
+</lightning-card>
+</template>
